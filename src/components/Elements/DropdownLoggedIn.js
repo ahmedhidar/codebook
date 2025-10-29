@@ -27,7 +27,7 @@ export const DropdownLoggedIn = ({setDropdown}) => {
     setDropdown(false);
     navigate("/");
   }
-    },[]);
+    },[navigate, setDropdown]);
   function handleLogout(){
     logout();
     setDropdown(false);
