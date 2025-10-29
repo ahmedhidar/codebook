@@ -5,7 +5,7 @@ function getSession(){
 }
 export async function getUser() {
   const browserData = getSession();
-     const response = await fetch(`${process.env.REACT_APP_HOST}600/users/${browserData.cbid}`, {
+     const response = await fetch(`${process.env.REACT_APP_HOST}/600/users/${browserData.cbid}`, {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${browserData.token}` },
             });
